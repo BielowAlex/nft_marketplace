@@ -1,0 +1,116 @@
+@media screen and (max-width: 1205px) {
+  .top_collections {
+    .collections {
+      display: grid;
+      grid-template-columns:repeat(3, 255.7px);
+      margin: 0 auto;
+    }
+  }
+
+  footer {
+    padding: 31px 40px 93px 40px;
+  }
+
+
+  .about_us {
+    .info_blocks {
+      display: flex;
+      justify-content: center;
+      column-gap: 50px;
+      row-gap: 20px;
+      flex-wrap: wrap;
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1105px) {
+  .nav {
+    .search {
+      width: 200px;
+    }
+  }
+  footer {
+    justify-content: center;
+
+    .info {
+      display: none;
+    }
+  }
+  .marketplace img {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav .buttons {
+    display: none;
+  }
+  .nav .popup_btn {
+    display: flex;
+  }
+  .nav {
+    justify-content: space-between;
+    .search {
+      width: 350px;
+    }
+  }
+
+  .top_collections {
+    .collections {
+      display: grid;
+      grid-template-columns:repeat(2, 255.7px);
+      grid-column-gap: 100px;
+      //margin: 0 auto;
+    }
+  }
+
+  header .title h1 {
+    width: 500px;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  .top_collections {
+    padding: 0 27px;
+  }
+  .gems{
+    padding: 0 27px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .top_collections {
+    .collections {
+      grid-template-columns:repeat(1, 255.7px);
+    }
+  }
+
+  .marketplace img {
+    max-width: 500px;
+  }
+  header .title h1 {
+    width: 300px;
+  }
+  header {
+    padding-left: 23px;
+  }
+  footer .block_links {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 50px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .nav {
+    .search {
+      display: none;
+    }
+  }
+
+}

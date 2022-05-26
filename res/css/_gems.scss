@@ -7,10 +7,12 @@
   margin-bottom: 128px;
 
   .gems_carts {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    column-gap: 50px;
     flex-wrap: wrap;
     row-gap: 24px;
+    justify-content: center;
 
     .cart {
       width: 321px;

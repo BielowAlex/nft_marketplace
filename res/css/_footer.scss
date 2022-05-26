@@ -5,25 +5,7 @@ footer {
   justify-content: space-between;
   padding: 31px 120px 93px 120px;
 
-  .info {
-    width: 276px;
-    color: white;
 
-    h3 {
-      font-size: 14px;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-weight: 100;
-      font-size: 14px;
-      line-height: 20px;
-      text-align: justify;
-
-
-    }
-  }
 
   .block_links {
     display: flex;
@@ -48,5 +30,25 @@ footer {
       column-gap: 38px;
       row-gap: 14px;
     }
+  }
+}
+
+.info {
+  width: 276px;
+  color: white;
+
+  h3 {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+
+
   }
 }
