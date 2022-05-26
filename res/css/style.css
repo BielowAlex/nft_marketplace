@@ -105,42 +105,11 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
   font-style: normal;
 }
-body {
-  background-image: url("../img/background.jpg");
-  font-family: "WhyteInktrap", sans-serif;
-  font-weight: 400;
-}
-
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: white;
-}
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: white;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: white;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: white;
-}
-
-.wrapper {
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 96px;
+  padding: 27px;
   width: 100%;
   background: #1f1d2b;
   backdrop-filter: blur(1110px);
@@ -303,6 +272,186 @@ header .learn_video {
 }
 header .learn_video:hover {
   color: #73E0A9;
+}
+
+.gems {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-top: 100px;
+  padding: 0 107px;
+  margin-bottom: 128px;
+}
+.gems .gems_carts {
+  display: flex;
+  justify-content: space-between;
+}
+.gems .gems_carts .cart {
+  width: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 17px;
+  border: 1px solid #73E0A9;
+  border-radius: 35px;
+  transition: all 0.4s linear;
+  color: white;
+}
+.gems .gems_carts .cart:hover {
+  border: 1px solid #5B68DF;
+}
+.gems .gems_carts .cart .avatar {
+  position: relative;
+  bottom: 27px;
+}
+.gems .gems_carts .cart .cart_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.gems .gems_carts .cart .cart_title h3 {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 23px;
+  font-weight: 500;
+}
+.gems .gems_carts .cart .cart_title span {
+  text-align: center;
+  font-weight: 100;
+}
+.gems .gems_carts .cart .cart_title span .nick {
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gems .gems_carts .cart p {
+  font-weight: 100;
+  text-align: justify;
+}
+
+.sec_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec_title h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 36px;
+}
+.sec_title span {
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  font-family: "WhyteInktrap", sans-serif;
+  font-weight: 400;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: white;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_collections {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 0 107px;
+}
+.top_collections .collections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 27px;
+}
+.top_collections .collections .collection {
+  cursor: pointer;
+  border: 1px solid #73E0A9;
+  border-radius: 35px;
+  overflow: hidden;
+  height: 367px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s linear;
+}
+.top_collections .collections .collection:hover {
+  border: 1px solid #5B68DF;
+}
+.top_collections .collections .collection .about_nft {
+  margin: 0 auto;
+  background: #252836;
+  width: 255.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.top_collections .collections .collection .about_nft .user {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 21px 23px;
+  column-gap: 12px;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  -moz-border-image: -moz-linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  -webkit-border-image: -webkit-linear-gradient(20.71deg, #73E0A9 0%, #5B68DF 100%);
+  border-image-slice: 1;
+}
+.top_collections .collections .collection .about_nft .user span {
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 14px;
+}
+.top_collections .collections .collection .about_nft .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  padding: 9.93px 153px 9.93px 23px;
+  color: white;
+}
+.top_collections .collections .collection .about_nft .price span {
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */

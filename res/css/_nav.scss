@@ -1,0 +1,115 @@
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 27px;
+
+  width: 100%;
+  background: rgba(31, 29, 43, 1);
+  backdrop-filter: blur(1110px);
+  opacity: 80%;
+  img{
+    cursor: pointer;
+  }
+  .search{
+    padding: 9px 33px;
+    width: 378px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background: rgba(31, 29, 43, 1);
+    background-clip: padding-box;
+
+
+    &::after{
+      position: absolute;
+      top: -1px; bottom: -1px;
+      left: -1px; right: -1px;
+      background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+      content: '';
+      z-index: -1;
+      border-radius: 30px;
+    }
+
+    label{
+      display: flex;
+      align-items: center;
+      column-gap: 26px;
+      //background: rgba(31, 29, 43, 1);
+      width: 100%;
+      height: 100%;
+      img{
+        cursor: pointer;
+      }
+      input{
+        background:inherit;
+        font-weight: 100;
+        color: white;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .buttons{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    .account_btn{
+      padding: 6px 24px;
+      position: relative;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      &:hover{
+        background: rgba(31, 29, 43, 1);
+      }
+      &::after{
+        position: absolute;
+        top: -2px; bottom: -2px;
+        left: -2px; right: -2px;
+        background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+        content: '';
+        z-index: -1;
+        border-radius: 30px;
+      }
+    }
+    .wallet{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      padding: 4px 24px;
+      position: relative;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      &:hover{
+        background: rgba(31, 29, 43, 1);
+      }
+      &::after{
+        position: absolute;
+        top: -2px; bottom: -2px;
+        left: -2px; right: -2px;
+        background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+        content: '';
+        z-index: -1;
+        border-radius: 30px;
+      }
+    }
+
+    a{
+      color: white;
+      transition: all 0.4s linear;
+      &:nth-child(1):hover{
+        color:#73E0A9 ;
+      }
+      &:nth-child(2):hover{
+        color:#73E0A9 ;
+      }
+      &:nth-child(3):hover{
+        color:#73E0A9 ;
+      }
+    }
+
+
+  }
+
+}

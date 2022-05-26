@@ -1,0 +1,59 @@
+header{
+  color: white;
+  padding-left: 103px;
+  .title{
+    margin-top: 220px;
+
+    span{
+      font-size: 14px;
+      font-weight: 200;
+      opacity: 0.5;
+    }
+    h1{
+      width: 972px;
+      margin-top: 16px;
+      font-size: 36px;
+      line-height: 52px;
+      font-weight: 500;
+    }
+
+  }
+  .buttons{
+    margin-top: 64px;
+    display: flex;
+    column-gap: 24px;
+    a{
+      color: white;
+      padding: 13px 63px;
+      position: relative;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      transition: all 0.4s linear;
+      &:hover{
+        background: rgba(31, 29, 43, 0.9);
+      }
+      &::after{
+        position: absolute;
+        top: -2px; bottom: -2px;
+        left: -2px; right: -2px;
+        background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+        content: '';
+        z-index: -1;
+        border-radius: 30px;
+      }
+
+    }
+  }
+
+  .learn_video{
+    display: flex;
+    margin-top: 154px;
+    color: white;
+    align-items: center;
+    column-gap: 12px;
+    transition: all 0.4s linear;
+    &:hover{
+      color:#73E0A9;
+    }
+  }
+}
