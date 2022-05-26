@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("../fonts/WhyteInktrap-ExtraLight.woff2"), url("../fonts/WhyteInktrap-ExtraLight.woff");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("../fonts/WhyteInktrap-Regular.woff2"), url("../fonts/WhyteInktrap-Regular.woff");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("../fonts/WhyteInktrap-Book.woff2"), url("../fonts/WhyteInktrap-Book.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("../fonts/WhyteInktrap-Bold.woff2"), url("../fonts/WhyteInktrap-Bold.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WhyteInktrap";
+  src: url("../fonts/WhyteInktrap-Heavy.woff2"), url("../fonts/WhyteInktrap-Heavy.woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+body {
+  background-image: url("../img/background.jpg");
+  font-family: "WhyteInktrap", sans-serif;
+  font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: white;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 96px;
+  width: 100%;
+  background: #1f1d2b;
+  backdrop-filter: blur(1110px);
+  opacity: 80%;
+}
+.nav img {
+  cursor: pointer;
+}
+.nav .search {
+  padding: 9px 33px;
+  width: 378px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background: #1f1d2b;
+  background-clip: padding-box;
+}
+.nav .search::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 30px;
+}
+.nav .search label {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+  width: 100%;
+  height: 100%;
+}
+.nav .search label img {
+  cursor: pointer;
+}
+.nav .search label input {
+  background: inherit;
+  font-weight: 100;
+  color: white;
+  width: 100%;
+}
+.nav .buttons {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+}
+.nav .buttons .account_btn {
+  padding: 6px 24px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.nav .buttons .account_btn:hover {
+  background: #1f1d2b;
+}
+.nav .buttons .account_btn::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 30px;
+}
+.nav .buttons .wallet {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 4px 24px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.nav .buttons .wallet:hover {
+  background: #1f1d2b;
+}
+.nav .buttons .wallet::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 30px;
+}
+.nav .buttons a {
+  color: white;
+  transition: all 0.4s linear;
+}
+.nav .buttons a:nth-child(1):hover {
+  color: #73E0A9;
+}
+.nav .buttons a:nth-child(2):hover {
+  color: #73E0A9;
+}
+.nav .buttons a:nth-child(3):hover {
+  color: #73E0A9;
+}
+
+header {
+  color: white;
+  padding-left: 103px;
+}
+header .title {
+  margin-top: 220px;
+}
+header .title span {
+  font-size: 14px;
+  font-weight: 200;
+  opacity: 0.5;
+}
+header .title h1 {
+  width: 972px;
+  margin-top: 16px;
+  font-size: 36px;
+  line-height: 52px;
+  font-weight: 500;
+}
+header .buttons {
+  margin-top: 64px;
+  display: flex;
+  column-gap: 24px;
+}
+header .buttons a {
+  color: white;
+  padding: 13px 63px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition: all 0.4s linear;
+}
+header .buttons a:hover {
+  background: rgba(31, 29, 43, 0.9);
+}
+header .buttons a::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  content: "";
+  z-index: -1;
+  border-radius: 30px;
+}
+header .learn_video {
+  display: flex;
+  margin-top: 154px;
+  color: white;
+  align-items: center;
+  column-gap: 12px;
+  transition: all 0.4s linear;
+}
+header .learn_video:hover {
+  color: #73E0A9;
+}
+
+/*# sourceMappingURL=style.css.map */
