@@ -1,0 +1,46 @@
+
+.button{
+  padding: 6px 24px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition: all 0.4s linear;
+  &:hover{
+    background: rgba(31, 29, 43, 1);
+  }
+  &::after{
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 30px;
+  }
+}
+
+.marketplace{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 0;
+  img{
+    max-width: 994px;
+  }
+  h2{
+    font-size: 36px;
+    line-height: 52px;
+    color: white;
+  }
+  .nick{
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom: 54px;
+  }
+  .button{
+    margin-top: 54px;
+    cursor: pointer;
+    color: white;
+  }
+}

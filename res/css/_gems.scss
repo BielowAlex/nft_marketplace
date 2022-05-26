@@ -9,6 +9,8 @@
   .gems_carts {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
 
     .cart {
       width: 321px;
@@ -49,11 +51,7 @@
         span{
           text-align: center;
           font-weight: 100;
-          .nick{
-            background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
+
         }
       }
 
@@ -84,4 +82,10 @@
     -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
+}
+
+.nick{
+  background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

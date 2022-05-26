@@ -1,0 +1,52 @@
+footer {
+  width: 100%;
+  backdrop-filter: blur(200px);
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 120px 93px 120px;
+
+  .info {
+    width: 276px;
+    color: white;
+
+    h3 {
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-weight: 100;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+
+
+    }
+  }
+
+  .block_links {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 69px;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      row-gap: 14px;
+
+      a {
+        color: white;
+        font-weight: 100;
+      }
+    }
+
+    .social_media {
+      display: flex;
+      flex-wrap: wrap;
+      width: 211px;
+      column-gap: 38px;
+      row-gap: 14px;
+    }
+  }
+}
